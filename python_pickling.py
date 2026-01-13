@@ -152,3 +152,170 @@ salary
 
 # for emp in employees:
 #     emp.display()
+
+
+
+
+
+"""
+Write a Python script that:
+
+1️⃣ Defines a Student class with
+
+name
+
+roll
+
+marks
+
+2️⃣ Supports three operations:
+
+Add student (create & store object)
+
+View all students (read & print objects)
+
+Exit (stop program)
+
+3️⃣ Use pickling with persistence
+
+On each add, append the object to students.pkl
+
+When viewing, unpickle all objects and print them"""
+
+# import pickle
+# import os
+
+# class Student:
+#     def __init__(self, name, roll, marks):
+#         self.name = name
+#         self.roll = roll
+#         self.marks = marks
+    
+#     def display(self):
+#         print(f"Name is: {self.name}\nRoll is: {self.roll}\nMarks are:{self.marks}")
+
+    
+# FILE = 'student.pkl'
+
+# def add_student():
+#     name = input('Enter your name: ')
+#     roll = int(input("Enter roll: "))
+#     marks = float(input("Enter marks: "))
+
+#     student = Student(name, roll, marks)
+
+#     with open(FILE, 'ab') as f:
+#         pickle.dump(student, f)
+#     print('Student added successfully!\n')
+
+
+# def view_student():
+#     if not os.path.exists(FILE):
+#         print("No students found!\n")
+#         return
+    
+#     with open(FILE, 'rb') as f:
+#         print("========= Student list =========")
+#         while True:
+#             try:
+#                 student = pickle.load(f)
+#                 student.display()
+#             except EOFError:
+#                 break
+#             print("="*50,"\n")
+
+
+
+# while True:
+#     print('1. Add student')
+#     print('2. View student')
+#     print('3. Exit ')
+
+#     choice = input("Enter choice: ")
+
+#     if choice == "1":
+#         add_student()
+    
+#     elif choice == '2':
+#         view_student()
+    
+#     elif choice == '3':
+#         break
+    
+#     else:
+#         print("Invalid choice\n")
+
+
+
+
+
+
+"""
+Create a dictionary with 3 fields
+Save it to data.pkl using pickling
+Load it back and print it."""
+
+# import pickle
+
+# userData = {
+#     'Name' :"Sushil",
+#     'Id' :11,
+#     'Designation' : 'Software Engineer'
+# }
+
+# with open('userData.xyz', 'wb') as f:
+#     pickle.dump(userData, f)
+
+# with open('userData.xyz', 'rb') as f:
+#     while True:
+#         try:
+#             obj = pickle.load(f)
+#             print(obj)
+            
+#         except EOFError:
+#             break
+    
+
+# import pickle
+    
+# nums = [1, 2, 3, 4, 5]
+
+# with open('nums.ninja', 'wb') as f:
+#     pickle.dump(nums, f)
+
+# with open('nums.ninja', 'rb') as f:
+#     obj = pickle.load(f)
+    
+# for item in obj:
+#     print(item, end = ' ')
+
+
+# import pickle
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+    
+#     def display(self):
+#         print(f"Name is: {self.name}\nAge is: {self.age}\n{'='*25}")
+
+
+
+# p1 = Person("Nobita", 12)
+# p2 = Person("Sitzuka", 12)
+
+# persons_list = [p1, p2]
+
+# with open('person.dor', 'wb') as f:
+#     pickle.dump(persons_list, f)
+
+# with open('person.dor', 'rb') as f:
+#     obj = pickle.load(f)
+    
+#     for i in obj:
+#         i.display()
+
+
+
+
