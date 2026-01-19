@@ -1,0 +1,28 @@
+{"company_name" : "Infosys",
+"Employees" : {
+    "E101" :{
+        "Name" : "SUSHIL",
+        "Salary" : 50000,
+        "Bank_name" : "Bank of Maharashtra",
+        "Acc_no" :789654123,
+        "City" : "Mumbai"
+    },
+
+    "E102" :{
+        "Name" : "Sheetal",
+        "Salary" : 25000,
+        "Bank_name" : "Bank of Maharashtra",
+        "Acc_no" :78965456,
+        "City" : "Mumbai"
+    },
+    
+    "E103" :{
+        "Name" : "Akansha",
+        "Salary" : 30000,
+        "Bank_name" : "Bank of Karnataka",
+        "Acc_no" :789654147,
+        "City" : "Bangalore"
+    }
+}
+
+}

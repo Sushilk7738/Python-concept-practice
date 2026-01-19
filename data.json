@@ -1,0 +1,14 @@
+{
+    "Age": 22,
+    "City": "Mumbai",
+    "IsMarried": false,
+    "Name": "Sushil",
+    "Number": 9326547896,
+    "Subject": [
+        "Python",
+        "Javascript",
+        "Django Rest Framework",
+        "React js",
+        "Django"
+    ]
+}
