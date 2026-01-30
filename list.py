@@ -120,3 +120,33 @@ nums = [1, 2, 3, 4, 5, 6]
 
 # nums = [1, 2, 3, 4, 5, 6, 7]
 # print([i*i for i in nums if i%2!=0])
+
+
+
+
+"""
+From the list below, create a new list where:
+
+If number is even → square it
+
+If number is odd → cube it"""
+
+nums = [1, 2, 3, 4, 5]
+
+# print([i*i if i%2==0 else i**3 for i in nums])
+
+
+
+
+# Flatten the list and keep only even numbers using list comprehension.
+nums = [[1, 2, 3], [4, 5, 6], [7, 8]]
+
+# print([j for i in nums for j in i if j%2==0])
+
+
+
+
+#* From the list below, create a new list that contains only words with length greater than 3, converted to uppercase.
+
+words = ["hi", "python", "is", "awesome", "ok"]
+print([i.upper() for i in words if len(i)>3])
