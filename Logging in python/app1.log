@@ -1,0 +1,5 @@
+09-Feb-26 13:20:01|this is debug message.|DEBUG|root|17068|37
+09-Feb-26 13:20:01|The info message is displaying|INFO|root|17068|38
+09-Feb-26 13:20:01|This is warning message displaying|WARNING|root|17068|39
+09-Feb-26 13:20:01|The error message is displaying|ERROR|root|17068|40
+09-Feb-26 13:20:01|The critical message is displaying|CRITICAL|root|17068|41
