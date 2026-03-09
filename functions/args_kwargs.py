@@ -76,3 +76,46 @@
 # )
 
 
+
+
+#* Mini shopcart:-
+
+
+def show_menu(**items):
+    print("="*30)
+    print("Welcome to Shopkart\nHere's menu..")
+
+    for item, price in items.items():
+        print(f"{item} : {price}")
+    print("="*25)
+
+menu = {
+    "milk" : 30,
+    "biscuits" :10,
+    "groceries" : 50
+}
+show_menu(**menu)
+
+cart = []
+
+def add_to_cart(*item):
+    for i in item:
+        if i in menu:
+            cart.append(i)
+            price = menu[i]
+            cart.append(price)
+            print(f"{item} added to cart.")
+        else:
+            print("Selected item is not in menu🥲")
+
+
+
+def calc_items():
+    total = 0
+    for i in cart:
+        if isinstance(i, int):
+            total +=i
+    print(f"Your total is: ₹{total}")
+
+add_to_cart("milk", "groceries")
+calc_items()
